@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">AFIF BELVA</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#portofolio">Portofolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="nav2">
+        <div class="logo">AFIF BELVA</div>
+        <div class="nav2-menu">
+            <div class="nav2-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()" >About</a></li>
+                <li><a href="#portofolio" onclick="toggleMenu()">Portofolio</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+     </nav>
+     <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/IMG_6482-modified.png" alt="Afif Belva">
+        </div>
+        <div class="section__text">
+            <p class="Section__test__p1">Hello, I'm</p>
+            <h1 class="title">Afif Belva Hadiat</h1>
+            <p class="Section__text__p2">COMPUTER SCIENCE MAJOR</p>
+            <div class="button-container">
+                <button 
+                class="button button-color-2" 
+                onclick="window.open('./assets/IMG_6482./')">Donwload CV
+            </button> 
+                <button 
+                class="button button-color-1" 
+                onclick="location.href='./#contact'">Contact Info
+            </button>
+            </div>
+            <div class="socials-container">
+                <img src="./assets/linkedin.png" alt="My Linked in Profile"
+                class="icon" onclick="location.href= 'https://surl.li/jqpjo'">
+                <img src="./assets/github.png" alt="My Github in Profile"
+                class="icon" onclick="location.href= 'https://github.com/AfifBelva'">
+            </div>
+        </div>
+     </section>
+     <section id="about">
+        <p class="section__text__p1">Get To Know Me</p>
+        <h1 class="animated-text">About me</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="detail-container">
+                        <h3>Hello Everyone</h3>
+                        <p class="Section__text__p2">
+                            Nama saya Afif Belva Hadiat dan saya ingin berbagi 
+                            sedikit tentang diri saya. 
+                            <br>Saya adalah seorang mahasisiwa 
+                        yang mengambil jurusan Computer Science.
+                    Saya Memiliki hobi bermain game, bulutangkis, dan editing. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 class="title">Riwayat Pendidikan</h1>
+        <table class="styled-table">
+            <thead>
+              <tr>
+                <th>2017-2019</th>
+                <th>2020-2023</th>
+                <th>2023-present</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sekolah Menengah Pertama Islam Al-Ikhlas</td>
+                <td>Sekolah Menengah Atas Negeri 82 Jakarta</td>
+                <td>Universitas Bina Nusantara</td>
+              </tr>
+            </tbody>
+          </table>
+    </section>
+    <section class="programming-languages">
+        <h2>Programming Languages</h2>
+        <ul>
+            <li>
+                <span class="language-tag">HTML</span>
+                <span class="language-tag">CSS</span>
+                <span class="language-tag">JavaScript</span>
+            </li>
+            <li>
+                <span class="language-tag">C</span>
+            </li>
+        </ul>
+    </section>
+    <section id="portofolio">
+        <p class="section__text__p1">Brows My</p>
+        <h1 class="title">Portofolio</h1>
+        <div class="project">
+            <img src="./assets/fm.png" alt="Project 1 Preview">
+            <div class="project-info">
+                <h3>Figma Mockup</h3>
+                <p>Membuat Design Website</p>
+                <a href="project1-details.html">Lihat Detail</a>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Nama lengkap:</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap Anda" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+          </div>
+          <div class="form-group">
+            <label for="linkedin">LinkedIn:</label>
+            <input type="text" id="linkedin" name="linkedin" placeholder="Masukkan URL profil LinkedIn Anda">
+          </div>
+          <div class="form-group">
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" placeholder="Tinggalkan pesan atau komentar Anda" required></textarea>
+          </div>
+          <button type="submit">Kirim</button>
+        </form>
+      </section>
+    <script src="script.js"></script>
+</body>
+</html>
+
